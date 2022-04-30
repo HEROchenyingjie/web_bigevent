@@ -1,0 +1,349 @@
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url(../image/echartbeijing.png);
+}
+h1 {
+  height: 0;
+  float: left;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 p {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+}
+.viewport {
+  display: flex;
+  min-width: 1024px;
+  margin: 0 auto;
+  padding: 0.75rem 0.25rem 0;
+  background-image: url(../image/4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 780px;
+}
+.viewport .column {
+  flex: 1;
+}
+.viewport .column:nth-child(2) {
+  flex: 2;
+}
+.panel {
+  position: relative;
+  border: 15px solid transparent ;
+  border-width: 1rem 1rem 1rem 1rem;
+  border-image-source: url(../image/kuang3.png);
+  border-image-slice: 40 40 40 40;
+  margin-top: 0.1rem;
+}
+.inner {
+  position: absolute;
+  top: -0.45rem;
+  left: -0.2rem;
+  right: -0.2rem;
+  bottom: -0.3rem;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.blue1 {
+  color: #bdbdff;
+}
+.lanziti1 {
+  font-size: 0.27rem;
+  line-height: 0.375rem;
+  font-weight: 300;
+}
+.lanziti2 {
+  line-height: 0.5rem;
+  font-size: 0.1rem;
+  letter-spacing: 5px;
+}
+.overview {
+  height: 1.5rem;
+}
+.overview ul {
+  display: flex;
+  justify-content: space-between;
+}
+.overview ul li {
+  flex: 1;
+}
+.overview ul li h4 {
+  color: white;
+  font-weight: 400;
+}
+.overview ul li span {
+  font-size: 0.27rem;
+  line-height: 0.375rem;
+  font-weight: 300;
+  color: #bdbdff;
+}
+.overview ul li span i {
+  font-size: 0.075rem;
+}
+.monitor {
+  height: 6rem;
+}
+.monitor .inner {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.monitor .tabs {
+  display: flex;
+}
+.monitor .tabs a {
+  color: white;
+  font-size: 0.3rem;
+  line-height: 0.6rem;
+}
+.monitor .content {
+  flex: 1;
+  position: relative;
+}
+.monitor .head {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.5rem;
+  font-size: 0.23rem;
+}
+.monitor .row {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.5rem;
+  font-size: 0.1rem;
+}
+.monitor .row .icon-dot {
+  position: absolute;
+  left: 0.02rem;
+  opacity: 0;
+}
+.monitor .row:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #68d8fe;
+}
+.monitor .row:hover .icon-dot {
+  opacity: 1;
+}
+.monitor .col:first-child {
+  width: 1rem;
+}
+.monitor .col:nth-child(2) {
+  width: 2.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+}
+.monitor .col:nth-child(3) {
+  width: 1rem;
+}
+@keyframes move {
+  100% {
+    transform: translateY(-50%);
+  }
+}
+.marquee-view {
+  overflow: hidden;
+}
+.marquee-view .marquee {
+  animation: move 15s linear infinite;
+}
+.marquee-view .marquee:hover {
+  animation-play-state: paused;
+}
+.point {
+  height: 4rem;
+}
+.point h3 {
+  font-size: 0.3rem;
+}
+.point .chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.point .chart .pie {
+  height: 2.5rem;
+}
+.point .chart .item {
+  flex: 1;
+  text-align: center;
+  font-size: 0.27rem;
+}
+.point .chart .item i {
+  font-size: 0.075rem;
+}
+.panel h3 {
+  font-size: 0.3rem;
+  color: white;
+  font-weight: 400;
+}
+.viewport .column:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  height: 8.9rem;
+}
+.map h3 {
+  margin-top: 30px;
+  color: white;
+  font-size: 0.3rem;
+  letter-spacing: 5px;
+  font-weight: 200;
+}
+.map h3 span {
+  font-size: 24px;
+  color: #68d8fe;
+}
+.map .chart {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.map .chart .geo {
+  width: 100%;
+  height: 100%;
+}
+.jk {
+  position: relative;
+  height: 3.3rem;
+}
+.jk .jk1 {
+  position: absolute;
+  top: -0.65rem;
+  left: -0.2rem;
+  right: -0.2rem;
+  bottom: -0.3rem;
+}
+.jk .jk1 .tu {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes move1 {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.jk .jk1 .tu ul {
+  animation: move1 15s linear infinite;
+}
+.jk .jk1 .tu ul:hover {
+  animation-play-state: paused;
+}
+.jk .jk1 .tu li {
+  display: inline-block;
+}
+.jk .jk1 .tu li img {
+  height: 2rem;
+  width: 3.25rem;
+}
+.jk .jk1 h3 {
+  font-size: 0.3rem;
+  font-weight: 200;
+  line-height: 0.5rem;
+}
+.xf {
+  height: 3.3rem;
+}
+.xf .nn div {
+  margin: 0 auto;
+  text-align: center;
+}
+.xf .nn div b {
+  display: inline-block;
+  color: white;
+  font-size: 1.13rem;
+}
+.xfbj {
+  height: 2.7rem;
+}
+.xfbj ul {
+  display: flex;
+}
+.xfbj ul li {
+  flex: 1;
+  justify-content: space-between;
+  text-align: center;
+  vertical-align: middle;
+}
+.xfbj ul li div {
+  font-size: 0.5rem;
+}
+.xfbj ul li .ge {
+  color: white;
+}
+.xfbj ul li span {
+  line-height: 0.5rem;
+  font-size: 0.1rem;
+}
+.kt {
+  height: 3rem;
+}
+.kt .inner {
+  display: flex;
+  flex-direction: column;
+}
+.kt .chart {
+  flex: 1;
+  position: relative;
+}
+.kt .chart .label {
+  position: absolute;
+  top: 0.035rem;
+  color: #bdbdff;
+  font-size: 0.175rem;
+}
+.kt .chart .line {
+  width: 100%;
+  height: 2rem;
+}
+.kt .caption {
+  display: flex;
+  line-height: 1;
+}
+.kt .caption h3 {
+  border-right: 0.025rem solid #00f2f1;
+  padding-right: 0.08rem;
+}
+.kt .caption a {
+  padding: 0.05rem;
+  font-size: 0.2rem;
+  margin: -0.0375rem 0 0 0.2625rem;
+  border-radius: 0.0375rem;
+  color: #0bace6;
+}
+.kt .caption a.active {
+  background-color: #4c9bfd;
+  color: #fff;
+}
+.zm {
+  height: 3rem;
+}
+.zm .inner .chart {
+  width: 100%;
+  height: 1.8rem;
+}
+.zm .inner .chart .bar {
+  height: 100%;
+}
